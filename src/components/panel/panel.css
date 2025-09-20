@@ -1,0 +1,101 @@
+:root {
+  --secondary-color: #6a7988;
+}
+
+.panel {
+  width: 100%;
+  min-width: 1400px;
+  height: 100vh;
+  padding: 2rem;
+  padding-top: 1rem;
+  border-radius: 8px;
+}
+
+.panel-week-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(180px, 1fr));
+  gap: 16px;
+  height: 100%;
+}
+
+.panel-day-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  min-height: 80vh;
+}
+
+.panel-day-name {
+  font-weight: 600;
+  color: #6a7988;
+  font-size: 14px;
+}
+
+.panel-day-name-today {
+  color: #5a57cb !important;
+  font-weight: 700 !important;
+}
+
+.panel-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  border-radius: 8px;
+  padding: 8px;
+
+  background-color: #f3f5f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.panel-container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-container-header-date {
+  color: #6a7988;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.panel-container-header-btn {
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  background-color: #a0a8b1;
+  padding: 0;
+}
+
+.panel-container-header-btn:hover {
+  background-color: #7c3aed;
+}
+
+.panel-container-header-btn:focus {
+  outline: none;
+}
+
+.panel-container-header-btn span {
+  font-size: 18px;
+}
+
+.panel-container-body {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

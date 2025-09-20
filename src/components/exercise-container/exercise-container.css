@@ -1,0 +1,47 @@
+.exercise-container {
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  padding: 8px;
+
+  background-color: white;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.exercise-container:hover {
+  box-shadow: 0 2px 4px rgba(139, 92, 246, 0.5);
+}
+
+.exercise-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #212529;
+  text-align: right;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.exercise-sets {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+
+  margin: 0;
+  font-size: 13px;
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.exercise-sets-count {
+  font-weight: 700;
+}
+
+.exercise-sets-info {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

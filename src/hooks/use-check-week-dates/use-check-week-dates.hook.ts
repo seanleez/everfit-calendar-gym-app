@@ -14,7 +14,8 @@ export const DAYS_OF_WEEK_ORDER: EDaysOfWeek[] = [
 export const useCheckWeekDates = () => {
   const getCurrentDayOfWeek = useCallback((): EDaysOfWeek => {
     const today = new Date();
-    const dayIndex = today.getDay(); // 0 = Sunday, 1 = Monday, etc.
+    // 0 = Sunday, 1 = Monday, etc.
+    const dayIndex = today.getDay();
     // Convert Sunday (0) to 6, and shift other days accordingly for Monday-first week
     const mondayFirstIndex = dayIndex === 0 ? 6 : dayIndex - 1;
     return DAYS_OF_WEEK_ORDER[mondayFirstIndex];

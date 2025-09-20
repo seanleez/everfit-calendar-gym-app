@@ -126,3 +126,10 @@ The application will be available at `http://localhost:3000` in development mode
 - **ESLint** with React and TypeScript configurations
 - **TypeScript** strict type checking
 - **React Hooks** linting rules
+
+## 🔧 Future Improvements
+
+- **Immerjs** - For handling complex nested state updates with immutable patterns
+- **Redux** - For centralized state management if the application grows in complexity
+- **Dayjs** - For better date object handling and manipulation
+- **Clsx** - For improved className composition and conditional styling
